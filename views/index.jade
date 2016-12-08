@@ -1,0 +1,36 @@
+extends layout
+
+html(ng-app="store")
+  head
+    title= title
+    link(rel='stylesheet', href='/styles/bootstrap/bootstrap.min.css')
+    link(rel='stylesheet', href='/styles/bootstrap/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/styles/style.css')
+    script(type='text/javascript' src='./scripts/angular/angular.min.js')
+    script(type='text/javascript' src='./scripts/angular/app.js')
+  body(ng-controller="StoreController as store")
+    p Welcome to #{title}
+    h1 {{store.title}}
+      input(type="text" name="brand_id_input")
+      .container-fluid
+        div.row.tb-header.text-center 
+          .col-md-2
+            Name 
+          .col-md-3
+            Description 
+          .col-md-2
+            Brand 
+          .col-md-1
+            Rating 
+          .col-md-4
+            Comment 
+        div.row.text-center(ng-repeat="product in store.products" ng-class="$even ? 'tr-even' : 'tr-odd'")
+          .col-md-2 {{product.product_name}} 
+          .col-md-3 {{product.product_description}} 
+          .col-md-2 {{product.brand_name}} 
+          .col-md-1 {{product.review_rating}} 
+          .col-md-4
+            .row-comment {{product.review_comment}}
+            div.row-user-name.text-right
+              span(ng-show="product.user_name") --{{product.user_name}}
+            .row-add-review.text-right(ng-click="jumpToUrl('/{{product.product_name}}')") Add Review

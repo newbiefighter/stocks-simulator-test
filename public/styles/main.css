@@ -1,0 +1,290 @@
+body {
+	padding-top: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+input{
+	width: 50px;
+}
+a {
+	color: #00B7FF;
+}
+
+.view-container {
+	margin: 60px auto;
+}
+
+.container-fluid{
+	padding-top: 20px;
+}
+
+.tab-content{
+	margin-top: 10px;
+}
+
+.tm-content {
+	width: 80%;
+	margin: auto;
+}
+
+.tm-content .filter-wrapper {
+	float: right;
+}
+
+.tm-content .row.highlight{
+	background-color: yellow;
+}
+.tm-content .row.normal{
+	background-color: white;
+}
+
+.tm-content .row .up{
+	color: green;
+}
+
+.tm-content .row .down{
+	color: red;
+}
+
+.row {
+	margin: 0;
+	height: auto;
+	padding: 10px 0 10px 0;
+}
+
+.search-block div{
+	height: 30px;
+}
+
+.search-block div > input{
+	width: 100%;
+	height:100%;
+}
+
+.search-block div > button{
+	height:100%;
+}
+
+.tb-header{
+	background: SteelBlue;
+	color: white;
+	font-size: 18px;
+	font-weight:bold;
+	line-height: 40px;
+}
+
+.tr-odd{
+	background-color : #EAEAEA;
+}
+
+.tr-even{
+	background-color : #ffffff;
+}
+
+.row-user-name{
+	padding-top: 10px;
+	color : #EEAD0E;
+}
+
+.row-add-review{
+	padding-top: 10px;
+	color : #63B8FF;
+	text-decoration:underline;
+}
+.row-add-review a:hover{
+	cursor: pointer;
+}
+.vcenter {
+    vertical-align: middle;
+    display: inline-block;
+    float: none;
+}
+
+
+.form-horizontal{
+	border: 1px gray solid;
+}
+.form-group{
+	padding-top: 10px;
+	height: 50px;
+}
+.textarea-line{
+	height: 100px;
+}
+textarea{
+	height:80px;
+	resize: none;
+}
+.warning{
+	color: red;
+	padding-left: 5px;
+}
+
+.up-arrow{
+	background: url('../images/gb.png') 0px -536px no-repeat;
+}
+.down-arrow{
+	background: url('../images/gb.png') 0px -559px no-repeat;
+}
+
+.middle-size{
+	width:100px;
+}
+
+/* stock page*/
+.stock-content {
+	width: 90%;
+	margin: auto;
+}
+
+.kline img{
+	width: 545px;
+	height:300px;
+}
+
+.ip1, .ip2 {
+    position: absolute;
+    font-weight: normal;
+}
+
+.ip1{
+    font-size: 25px;
+    left: 0px;
+    width: 100px;
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    top:2px;
+}
+
+.ip2{
+	width: 18px;
+    height: 23px;
+    left: 106px;
+    top:6px;
+}
+.index .ip2{
+	left: 125px;
+}
+.ip34{
+	float: right;
+    position: absolute;
+    right: 30px;
+}
+.ip56{
+	position: absolute;
+    top: 32px;
+    left: 0;
+}
+
+.ip3{
+	top: 12px;
+    right: 17px;
+    font-size: 15px;
+}
+
+.ip4{
+	top: 32px;
+    right: 4px;
+    font-size: 15px;
+}
+
+.info-stock .info-title{
+	margin-left:30px;
+}
+
+.info-title{
+	font-size: 28px;
+	color: SteelBlue;
+	padding-bottom: 5px;
+	border-bottom: 1px solid SteelBlue;
+}
+.info-title p{
+	display: inline;
+	font-size: 20px;
+}
+
+.info-main b{
+	font-weight: normal;
+    
+}
+.info-stock .info-main b{
+	display: block;
+}
+
+.info table tr td{
+	padding: 0px 2px 5px 0px;
+}
+
+.info-stock table tr td{
+	padding: 0px 2px 2px 0px;
+}
+
+.info table tr td:nth-child(even){
+	padding-right: 15px;
+}
+
+.red{
+	color: #f00;
+}
+
+.green{
+	color: #090;
+}
+
+.recent-perf {
+	width: 95%;
+	margin: auto;
+}
+.no-padding-left{
+	padding-left: 0;
+}
+
+
+/* homepage */
+.homepage .center{
+	text-align: center;
+}
+
+.album img{
+	width: 300px;
+	height: 300px;
+} 
+
+.spinner-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:LightGray;
+    opacity: .8;
+    z-index: 1000;
+}
+.spinner {
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 100px;
+	left: 50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	background: url('../images/ajax-loader.gif') center no-repeat;
+}
+
+/* tags component*/
+#tags span{height:26px; line-height:26px;padding-right:6px;}
+.tag-block{ width:95%; margin:0 auto; padding-top:6px; padding-bottom:6px;}
+.tag-block .tags0{}
+.tag-block .tags1{color:#C00; font-size:24px;}
+.tag-block .tags2{color:#030; font-size:16px;}
+.tag-block .tags3{color:#00F;}
+.tag-block .tags4{ font-size:16px;}
+.tag-block .tags5{color:#C00; font-size:20px;}
+.tag-block .tags6{color:#F06 font-size:20px;}
+.tag-block .tags7{color:#030; font-weight:bold; font-size:18px;}
+.tag-block .tags8{color:#F06; font-weight:bold;}
+.tag-block .tags9{color:#C00; font-weight:bold;font-size:16px;}
+/*#tags span:hover{ color:#F00; text-decoration:underline;}
+*/
+

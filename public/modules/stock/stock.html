@@ -1,0 +1,29 @@
+<div class="content tm-content">
+    <div class="row tb-header text-center ">
+      <div class="col-md-1">Tick</div>
+      <div class="col-md-2">Name</div>
+      <div class="col-md-1">Last</div>
+      <div class="col-md-1">Norm</div>
+      <div class="col-md-2">Updated</div>
+      <div class="col-md-1">Change</div>
+      <div class="col-md-1">Bid Size</div>
+      <div class="col-md-1">Bid</div>
+      <div class="col-md-1">Ask</div>
+      <div class="col-md-1">Ask Size</div>        
+    </div>
+    <div class="row text-center " ng-repeat="item in stocks" ng-class="item.justUpdate? 'highlight':'normal'">
+      <div class="col-md-1"><input type="checkbox" ng-model="cboxGroup[$index]" ng-change="change()" /></div>
+      <div class="col-md-2">{{item.name}}</div>
+      <div class="col-md-1">{{item.last}}</div>
+      <div class="col-md-1">{{item.norm}}</div>
+      <div class="col-md-2">{{item.updatedLabel}}</div>
+      <div class="col-md-1" ng-class="item.change > 0 ? 'up' : 'down' ">{{item.change}}%</div>
+      <div class="col-md-1">{{item.bidSize}}</div>
+      <div class="col-md-1">{{item.bidPrice}}</div>
+      <div class="col-md-1">{{item.askPrice}}</div>
+      <div class="col-md-1">{{item.askSize}}</div>
+    </div>
+
+    <br /><br /><br /><br />
+    <div my-chart id = "chartContainer" style = "height: 300px; width: 100%;" />
+</div>
